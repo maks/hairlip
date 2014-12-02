@@ -1,6 +1,6 @@
 {
   "name": "hairlip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a very tiny version of mustache",
   "main": "hairlip.js",
   "scripts": {
