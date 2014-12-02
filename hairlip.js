@@ -7,8 +7,9 @@
 // and nothing else.
 module.exports = function hairlip(o, s) {
     return s.replace(/{{([^{}]*)}}/g,
-        function (a, b) {                       
-            return {string:true,number:true}[typeof o[b]] ? o[b] : "";
+        function (a, b) {
+            return {string:true,number:true}[typeof o[b]] ? o[b] : 
+              (typeof o[b] === 'function' ? o[b]() : "");
         }
     );
 };
